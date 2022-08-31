@@ -12,6 +12,7 @@ var e = enviper.New(viper.New())
 
 func init() {
 	e.AddConfigPath("./config")
+	e.SetConfigName("default")
 }
 
 type TracingConfig struct {
